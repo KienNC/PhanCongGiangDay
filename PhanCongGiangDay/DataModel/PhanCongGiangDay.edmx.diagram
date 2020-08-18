@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cf2bc5f8b3c4457ca3736592ddde9d4b" Name="Diagram1">
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.BoMon" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.ChucNang" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.ChuongTrinh" Width="1.5" PointX="3" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.GiangVien" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.GiangVienDay" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.GiangVienDK" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.HocPhan" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.KhoiLuongPhanCong" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.LopHoc" Width="1.5" PointX="5.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.NguoiDung" Width="1.5" PointX="10.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.NguoiDungVaiTro" Width="1.5" PointX="13" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.NhatKyHeTHong" Width="1.5" PointX="13" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.PhanCong" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.PhanCongDA" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.Quyen" Width="1.5" PointX="10.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.SinhVien" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.SinhVienDA" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.SinhVienDK" Width="1.5" PointX="8.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.ThoiGianLopHoc" Width="1.5" PointX="7.5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.TrangThaiGiangVien" Width="1.5" PointX="8.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.VaiTro" Width="1.5" PointX="10.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanCongGiangDayModel.VaiTroQuyen" Width="1.5" PointX="13" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK__HocPhan__BoMonId__047AA831" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK__GiangVien__Chuon__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK__LopHoc__ChuongTr__65F62111" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_GiangVienDay_GiangVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_GiangVienDK_GiangVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_KhoiLuongPhanCong_GiangVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_PhanCongDA_GiangVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_SinhVienDA_GiangVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_SinhVienDK_GiangVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_TrangThaiGiangVien_GiangVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_GiangVienDay_HocPhan" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_GiangVienDK_HocPhan" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_GiangVienDK_SinhVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_PhanCongDA_HocPhan" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_SinhVienDA_HocPhan" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_SinhVienDK_HocPhan" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_TrangThaiGiangVien_HocPhan" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_ThoiGianLopHoc_LopHoc" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_NguoiDungVaiTro_NguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_NhatKyHeTHong_NguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_NguoiDungVaiTro_VaiTro" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_PhanCongDA_SinhVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_VaiTroQuyen_Quyen" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_SinhVienDA_SinhVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_SinhVienDK_SinhVien" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanCongGiangDayModel.FK_VaiTroQuyen_VaiTro" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
