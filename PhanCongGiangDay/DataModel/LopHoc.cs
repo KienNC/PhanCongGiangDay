@@ -30,7 +30,7 @@ namespace PhanCongGiangDay.DataModel
         public int TrangThaiPhanCong { get; set; }
         public string HocKy { get; set; }
     
-        public virtual ChuongTrinh ChuongTrinh { get; set; }
+        public virtual DmChuongTrinh DmChuongTrinh { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ThoiGianLopHoc> ThoiGianLopHocs { get; set; }
     }

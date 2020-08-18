@@ -22,8 +22,8 @@ namespace PhanCongGiangDay.DataModel
         public string DinhHuong { get; set; }
         public string KyHoc { get; set; }
     
-        public virtual GiangVien GiangVien { get; set; }
-        public virtual HocPhan HocPhan { get; set; }
+        public virtual DmGiangVien DmGiangVien { get; set; }
+        public virtual DmHocPhan DmHocPhan { get; set; }
         public virtual SinhVien SinhVien { get; set; }
     }
 }

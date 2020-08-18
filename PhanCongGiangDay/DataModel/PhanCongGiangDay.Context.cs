@@ -25,27 +25,27 @@ namespace PhanCongGiangDay.DataModel
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<BoMon> BoMons { get; set; }
+        public virtual DbSet<DmBoMon> DmBoMons { get; set; }
         public virtual DbSet<ChucNang> ChucNangs { get; set; }
-        public virtual DbSet<ChuongTrinh> ChuongTrinhs { get; set; }
-        public virtual DbSet<GiangVien> GiangViens { get; set; }
+        public virtual DbSet<DmChuongTrinh> DmChuongTrinhs { get; set; }
+        public virtual DbSet<DmGiangVien> DmGiangViens { get; set; }
+        public virtual DbSet<DmHocPhan> DmHocPhans { get; set; }
         public virtual DbSet<GiangVienDay> GiangVienDays { get; set; }
         public virtual DbSet<GiangVienDK> GiangVienDKs { get; set; }
-        public virtual DbSet<HocPhan> HocPhans { get; set; }
         public virtual DbSet<KhoiLuongPhanCong> KhoiLuongPhanCongs { get; set; }
         public virtual DbSet<LopHoc> LopHocs { get; set; }
-        public virtual DbSet<NguoiDung> NguoiDungs { get; set; }
-        public virtual DbSet<NguoiDungVaiTro> NguoiDungVaiTroes { get; set; }
         public virtual DbSet<NhatKyHeTHong> NhatKyHeTHongs { get; set; }
         public virtual DbSet<PhanCong> PhanCongs { get; set; }
         public virtual DbSet<PhanCongDA> PhanCongDAs { get; set; }
-        public virtual DbSet<Quyen> Quyens { get; set; }
+        public virtual DbSet<QLNguoiDung> QLNguoiDungs { get; set; }
+        public virtual DbSet<QLNguoiDungVaiTro> QLNguoiDungVaiTroes { get; set; }
+        public virtual DbSet<QLQuyen> QLQuyens { get; set; }
+        public virtual DbSet<QLVaiTro> QLVaiTroes { get; set; }
         public virtual DbSet<SinhVien> SinhViens { get; set; }
         public virtual DbSet<SinhVienDA> SinhVienDAs { get; set; }
         public virtual DbSet<SinhVienDK> SinhVienDKs { get; set; }
         public virtual DbSet<ThoiGianLopHoc> ThoiGianLopHocs { get; set; }
         public virtual DbSet<TrangThaiGiangVien> TrangThaiGiangViens { get; set; }
-        public virtual DbSet<VaiTro> VaiTroes { get; set; }
-        public virtual DbSet<VaiTroQuyen> VaiTroQuyens { get; set; }
+        public virtual DbSet<QLVaiTroQuyen> QLVaiTroQuyens { get; set; }
     }
 }

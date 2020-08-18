@@ -12,20 +12,23 @@ namespace PhanCongGiangDay.DataModel
     using System;
     using System.Collections.Generic;
     
-    public partial class Quyen
+    public partial class QLVaiTro
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Quyen()
+        public QLVaiTro()
         {
-            this.VaiTroQuyens = new HashSet<VaiTroQuyen>();
+            this.QLNguoiDungVaiTroes = new HashSet<QLNguoiDungVaiTro>();
+            this.QLVaiTroQuyens = new HashSet<QLVaiTroQuyen>();
         }
     
         public int Id { get; set; }
-        public string MaQuyen { get; set; }
-        public string TenQuyen { get; set; }
+        public string MaVaiTro { get; set; }
+        public string TenVaiTro { get; set; }
         public string MoTa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VaiTroQuyen> VaiTroQuyens { get; set; }
+        public virtual ICollection<QLNguoiDungVaiTro> QLNguoiDungVaiTroes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<QLVaiTroQuyen> QLVaiTroQuyens { get; set; }
     }
 }

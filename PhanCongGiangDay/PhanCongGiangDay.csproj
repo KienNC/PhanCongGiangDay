@@ -129,16 +129,19 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="DataModel\BoMon.cs">
-      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
-    </Compile>
     <Compile Include="DataModel\ChucNang.cs">
       <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModel\ChuongTrinh.cs">
+    <Compile Include="DataModel\DmBoMon.cs">
       <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModel\GiangVien.cs">
+    <Compile Include="DataModel\DmChuongTrinh.cs">
+      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\DmGiangVien.cs">
+      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\DmHocPhan.cs">
       <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\GiangVienDay.cs">
@@ -147,19 +150,10 @@
     <Compile Include="DataModel\GiangVienDK.cs">
       <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModel\HocPhan.cs">
-      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
-    </Compile>
     <Compile Include="DataModel\KhoiLuongPhanCong.cs">
       <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\LopHoc.cs">
-      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\NguoiDung.cs">
-      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\NguoiDungVaiTro.cs">
       <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\NhatKyHeTHong.cs">
@@ -186,7 +180,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PhanCongGiangDay.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DataModel\Quyen.cs">
+    <Compile Include="DataModel\QLNguoiDung.cs">
+      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\QLNguoiDungVaiTro.cs">
+      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\QLQuyen.cs">
+      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\QLVaiTro.cs">
+      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\QLVaiTroQuyen.cs">
       <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\SinhVien.cs">
@@ -204,12 +210,6 @@
     <Compile Include="DataModel\TrangThaiGiangVien.cs">
       <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModel\VaiTro.cs">
-      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\VaiTroQuyen.cs">
-      <DependentUpon>PhanCongGiangDay.tt</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -222,8 +222,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="DataModel\PhanCongGiangDay.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>PhanCongGiangDay.Context.cs</LastGenOutput>
       <DependentUpon>PhanCongGiangDay.edmx</DependentUpon>
+      <LastGenOutput>PhanCongGiangDay.Context.cs</LastGenOutput>
     </Content>
     <Content Include="DataModel\PhanCongGiangDay.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

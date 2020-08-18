@@ -21,6 +21,6 @@ namespace PhanCongGiangDay.DataModel
         public Nullable<int> SoLuongLop { get; set; }
         public Nullable<int> SoLuongSVDA { get; set; }
     
-        public virtual GiangVien GiangVien { get; set; }
+        public virtual DmGiangVien DmGiangVien { get; set; }
     }
 }

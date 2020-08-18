@@ -19,7 +19,7 @@ namespace PhanCongGiangDay.DataModel
         public int HocPhanId { get; set; }
         public int SoLuong { get; set; }
     
-        public virtual GiangVien GiangVien { get; set; }
-        public virtual HocPhan HocPhan { get; set; }
+        public virtual DmGiangVien DmGiangVien { get; set; }
+        public virtual DmHocPhan DmHocPhan { get; set; }
     }
 }

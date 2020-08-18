@@ -12,13 +12,13 @@ namespace PhanCongGiangDay.DataModel
     using System;
     using System.Collections.Generic;
     
-    public partial class VaiTroQuyen
+    public partial class QLNguoiDungVaiTro
     {
         public int Id { get; set; }
+        public int NguoiDungId { get; set; }
         public int VaiTroId { get; set; }
-        public int QuyenId { get; set; }
     
-        public virtual Quyen Quyen { get; set; }
-        public virtual VaiTro VaiTro { get; set; }
+        public virtual QLNguoiDung QLNguoiDung { get; set; }
+        public virtual QLVaiTro QLVaiTro { get; set; }
     }
 }

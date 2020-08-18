@@ -12,12 +12,12 @@ namespace PhanCongGiangDay.DataModel
     using System;
     using System.Collections.Generic;
     
-    public partial class BoMon
+    public partial class DmBoMon
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public BoMon()
+        public DmBoMon()
         {
-            this.HocPhans = new HashSet<HocPhan>();
+            this.DmHocPhans = new HashSet<DmHocPhan>();
         }
     
         public int Id { get; set; }
@@ -26,6 +26,6 @@ namespace PhanCongGiangDay.DataModel
         public string ThongTinBoMon { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HocPhan> HocPhans { get; set; }
+        public virtual ICollection<DmHocPhan> DmHocPhans { get; set; }
     }
 }

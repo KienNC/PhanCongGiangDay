@@ -12,23 +12,20 @@ namespace PhanCongGiangDay.DataModel
     using System;
     using System.Collections.Generic;
     
-    public partial class ChuongTrinh
+    public partial class QLQuyen
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ChuongTrinh()
+        public QLQuyen()
         {
-            this.GiangVienDays = new HashSet<GiangVienDay>();
-            this.LopHocs = new HashSet<LopHoc>();
+            this.QLVaiTroQuyens = new HashSet<QLVaiTroQuyen>();
         }
     
         public int Id { get; set; }
-        public string MaChuongTrinh { get; set; }
-        public string TenChuongTrinh { get; set; }
-        public Nullable<double> HeSo { get; set; }
+        public string MaQuyen { get; set; }
+        public string TenQuyen { get; set; }
+        public string MoTa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GiangVienDay> GiangVienDays { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LopHoc> LopHocs { get; set; }
+        public virtual ICollection<QLVaiTroQuyen> QLVaiTroQuyens { get; set; }
     }
 }

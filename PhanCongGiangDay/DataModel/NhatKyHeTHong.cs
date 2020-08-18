@@ -19,6 +19,6 @@ namespace PhanCongGiangDay.DataModel
         public string MoTa { get; set; }
         public System.DateTime NgayTao { get; set; }
     
-        public virtual NguoiDung NguoiDung { get; set; }
+        public virtual QLNguoiDung QLNguoiDung { get; set; }
     }
 }
