@@ -31,7 +31,7 @@ namespace PhanCongGiangDay.DataModel
         public int BoMonId { get; set; }
         public Nullable<double> KhoiLuong { get; set; }
     
-        public virtual DmBoMon BoMon { get; set; }
+        public virtual DmBoMon DmBoMon { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GiangVienDay> GiangVienDays { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

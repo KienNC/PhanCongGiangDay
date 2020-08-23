@@ -25,8 +25,8 @@ namespace PhanCongGiangDay.DataModel
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DmBoMon> DmBoMons { get; set; }
         public virtual DbSet<ChucNang> ChucNangs { get; set; }
+        public virtual DbSet<DmBoMon> DmBoMons { get; set; }
         public virtual DbSet<DmChuongTrinh> DmChuongTrinhs { get; set; }
         public virtual DbSet<DmGiangVien> DmGiangViens { get; set; }
         public virtual DbSet<DmHocPhan> DmHocPhans { get; set; }
